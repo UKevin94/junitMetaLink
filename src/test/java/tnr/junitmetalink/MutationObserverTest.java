@@ -7,6 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.squashtest.ta.galaxia.squash.tf.galaxia.annotations.TFMetadata;
 
@@ -19,7 +20,7 @@ public class MutationObserverTest {
 
     @BeforeEach
     public void setUp(){
-        driver = new ChromeDriver();
+        driver = new FirefoxDriver();
         driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
         driver.get("https://codepen.io/dayvidwhy/pen/egdZyY");
     }
