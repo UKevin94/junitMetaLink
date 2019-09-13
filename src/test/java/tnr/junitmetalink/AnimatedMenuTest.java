@@ -24,7 +24,7 @@ public class AnimatedMenuTest {
         driver.get("https://codepen.io/knyttneve/pen/LKrGBy");
     }
 
-    @TFMetadata(key = "linked-TC", value = "b070ba1c-d7e6-4b22-8f0a-5c9cf82cab4f")
+    @TFMetadata(key = "linked-TC", value = "17932783-7d4a-4e68-a52e-e54b3116e3e7")
     @Test
     public void testMenu(){
         driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@id='result']")));
