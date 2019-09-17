@@ -22,7 +22,7 @@ public class AnimatedMenuTest {
     }
 
     //@TFMetadata(key = "linked-TC", value = "17932783-7d4a-4e68-a52e-e54b3116e3e7")
-    @DisplayName("MenuBlog")
+    @DisplayName("sameName")
     @Test
     public void testMenuBlog(){
         driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@id='result']")));
@@ -35,7 +35,7 @@ public class AnimatedMenuTest {
     }
 
 	//@TFMetadata(key = "linked-TC", value = "17932783-7d4a-4e68-a52e-e54b3116e3e7")
-    @DisplayName("MenuTestimonials")
+    @DisplayName("sameName")
     @Test
     public void testMenuTestimonials(){
         driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@id='result']")));
