@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-//import org.squashtest.ta.galaxia.squash.tf.galaxia.annotations.TFMetadata;
+import org.squashtest.ta.galaxia.squash.tf.galaxia.annotations.TFMetadata;
 import java.util.concurrent.TimeUnit;
 
 public class AnimatedMenuTest {
@@ -21,7 +21,7 @@ public class AnimatedMenuTest {
         driver.get("https://codepen.io/knyttneve/pen/LKrGBy");
     }
 
-    //@TFMetadata(key = "linked-TC", value = "17932783-7d4a-4e68-a52e-e54b3116e3e7")
+    @TFMetadata(key = "linked-TC", value = "17932783-7d4a-4e68-a52e-e54b3116e3e7")
     @DisplayName("sameName")
     @Test
     public void testMenuBlog(){
@@ -34,7 +34,7 @@ public class AnimatedMenuTest {
         Assertions.assertTrue(!style.contains("is-active"), "Le bouton n'a pas été désactivé");
     }
 
-	//@TFMetadata(key = "linked-TC", value = "17932783-7d4a-4e68-a52e-e54b3116e3e7")
+	@TFMetadata(key = "linked-TC", value = "zzz")
     @DisplayName("sameName")
     @Test
     public void testMenuTestimonials(){
