@@ -33,7 +33,7 @@ public class AnimatedMenuTest {
         style = driver.findElement(By.xpath("//a[contains(text(),'Testimonials')]")).getAttribute("class");
         Assertions.assertTrue(style.contains("is-active"), "Le bouton n'a pas été désactivé");
     }
-    
+
     @TFMetadata(key = "linked-TC", value = "17932783-7d4a-4e68-a52e-e54b3116e3e7")
     @DisplayName("sameName")
     @Test
@@ -51,6 +51,7 @@ public class AnimatedMenuTest {
 	
     @AfterEach
     public void tearDown(){
-        driver.quit();
+
+        //driver.quit();
     }
 }
