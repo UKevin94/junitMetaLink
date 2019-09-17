@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.squashtest.ta.galaxia.squash.tf.galaxia.annotations.TFMetadata;
+//import org.squashtest.ta.galaxia.squash.tf.galaxia.annotations.TFMetadata;
 import java.util.concurrent.TimeUnit;
 
 public class AnimatedMenuTest {
@@ -24,9 +24,9 @@ public class AnimatedMenuTest {
         driver.get("https://codepen.io/knyttneve/pen/LKrGBy");
     }
 
-    @TFMetadata(key = "linked-TC", value = "17932783-7d4a-4e68-a52e-e54b3116e3e7")
+    //@TFMetadata(key = "linked-TC", value = "17932783-7d4a-4e68-a52e-e54b3116e3e7")
     @Test
-    public void testMenu(){
+    public void testMenuBlog(){
         driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@id='result']")));
         driver.findElement(By.xpath("//a[contains(text(),'Blog')]")).click();
         String style = driver.findElement(By.xpath("//a[contains(text(),'Blog')]")).getAttribute("class");
@@ -36,6 +36,18 @@ public class AnimatedMenuTest {
         Assertions.assertTrue(!style.contains("is-active"), "Le bouton n'a pas été désactivé");
     }
 
+	//@TFMetadata(key = "linked-TC", value = "17932783-7d4a-4e68-a52e-e54b3116e3e7")
+    @Test
+    public void testMenuTestimonials(){
+        driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@id='result']")));
+        driver.findElement(By.xpath("//a[contains(text(),'Testimonials')]")).click();
+        String style = driver.findElement(By.xpath("//a[contains(text(),'Testimonials')]")).getAttribute("class");
+        Assertions.assertTrue(style.contains("is-active"), "Le bouton n'a pas été activé");
+        driver.findElement(By.xpath("//a[contains(text(),'About')]")).click();
+        style = driver.findElement(By.xpath("//a[contains(text(),'Testimonials')]")).getAttribute("class");
+        Assertions.assertTrue(!style.contains("is-active"), "Le bouton n'a pas été désactivé");
+    }
+	
     @AfterEach
     public void tearDown(){
         driver.quit();

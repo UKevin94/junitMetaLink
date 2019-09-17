@@ -52,11 +52,11 @@
             <artifactId>selenium-java</artifactId>
             <version>3.141.59</version>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>org.squashtest.ta.galaxia</groupId>
             <artifactId>squash-tf-galaxia-annotations</artifactId>
             <version>${galaxia.annotation.version}</version>
-        </dependency>
+        </dependency>-->
     </dependencies>    
   
     <build>

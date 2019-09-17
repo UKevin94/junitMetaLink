@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.squashtest.ta.galaxia.squash.tf.galaxia.annotations.TFMetadata;
+//import org.squashtest.ta.galaxia.squash.tf.galaxia.annotations.TFMetadata;
 
 import java.util.concurrent.TimeUnit;
 
@@ -25,7 +25,7 @@ public class MutationObserverTest {
         driver.get("https://codepen.io/dayvidwhy/pen/egdZyY");
     }
 
-    @TFMetadata(key = "linked-TC", value = "ac85c2b9-d935-4fac-83fa-6ec285fce6db")
+    //@TFMetadata(key = "linked-TC", value = "ac85c2b9-d935-4fac-83fa-6ec285fce6db")
     @Test
     public void testMutation(){
         driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@id='result']")));
