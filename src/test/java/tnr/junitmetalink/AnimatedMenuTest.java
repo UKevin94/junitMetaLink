@@ -44,7 +44,7 @@ public class AnimatedMenuTest {
         Assertions.assertTrue(style.contains("is-active"), "Le bouton n'a pas été activé");
         driver.findElement(By.xpath("//a[contains(text(),'About')]")).click();
         style = driver.findElement(By.xpath("//a[contains(text(),'Blog')]")).getAttribute("class");
-        Assertions.assertTrue(!style.contains("is-active"), "Le bouton n'a pas été désactivé");
+        Assertions.assertTrue(style.contains("is-active"), "Le bouton n'a pas été désactivé");
     }
 
 
