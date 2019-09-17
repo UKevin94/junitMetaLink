@@ -1,9 +1,6 @@
 package tnr.junitmetalink;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -25,6 +22,7 @@ public class AnimatedMenuTest {
     }
 
     //@TFMetadata(key = "linked-TC", value = "17932783-7d4a-4e68-a52e-e54b3116e3e7")
+    @DisplayName("MenuBlog")
     @Test
     public void testMenuBlog(){
         driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@id='result']")));
@@ -37,6 +35,7 @@ public class AnimatedMenuTest {
     }
 
 	//@TFMetadata(key = "linked-TC", value = "17932783-7d4a-4e68-a52e-e54b3116e3e7")
+    @DisplayName("MenuTestimonials")
     @Test
     public void testMenuTestimonials(){
         driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@id='result']")));
