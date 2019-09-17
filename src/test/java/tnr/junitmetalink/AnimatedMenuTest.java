@@ -22,7 +22,7 @@ public class AnimatedMenuTest {
     }
 
     @TFMetadata(key = "linked-TC", value = "b6bd1cc1-d161-407a-b7c8-59579e3d2514")
-    @DisplayName("sameName")
+    @DisplayName("MenuTestimonials")
     @Test
     public void testMenuTestimonials(){
         driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@id='result']")));
@@ -34,8 +34,8 @@ public class AnimatedMenuTest {
         Assertions.assertTrue(style.contains("is-active"), "Le bouton n'a pas été désactivé");
     }
 
-    @TFMetadata(key = "linked-TC", value = "c776128a-ecde-4579-972b-60d21025b465")
-    @DisplayName("sameName")
+    @TFMetadata(key = "linked-TC", value = {"c776128a-ecde-4579-972b-60d21025b465", "b6bd1cc1-d161-407a-b7c8-59579e3d2514"})
+    @DisplayName("MenuBlog")
     @Test
     public void testMenuBlog(){
         driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@id='result']")));
