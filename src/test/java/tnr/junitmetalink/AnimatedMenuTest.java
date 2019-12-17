@@ -16,7 +16,7 @@ public class AnimatedMenuTest {
 
     @BeforeEach
     public void setUp(){
-        driver = new FirefoxDriver();
+        driver = new ChromeDriver();
         driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
         driver.get("https://codepen.io/knyttneve/pen/LKrGBy");
     }
