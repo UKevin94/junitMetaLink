@@ -35,6 +35,6 @@
     <orderEntry type="library" name="Maven: org.codehaus.mojo:animal-sniffer-annotations:1.14" level="project" />
     <orderEntry type="library" name="Maven: com.squareup.okhttp3:okhttp:3.11.0" level="project" />
     <orderEntry type="library" name="Maven: com.squareup.okio:okio:1.14.0" level="project" />
-    <orderEntry type="library" name="Maven: org.squashtest.ta.galaxia:squash-tf-galaxia-annotations:1.0.0.RC2" level="project" />
+    <orderEntry type="library" name="Maven: org.squashtest.ta.galaxia:squash-tf-galaxia-annotations:1.0.1.RC1" level="project" />
   </component>
 </module>

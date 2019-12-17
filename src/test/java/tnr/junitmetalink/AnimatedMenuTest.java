@@ -21,7 +21,7 @@ public class AnimatedMenuTest {
         driver.get("https://codepen.io/knyttneve/pen/LKrGBy");
     }
 
-    @TFMetadata(key = "linked-TC", value = "zzzzzz")
+    @TFMetadata(key = "linked-TC", value = "afcee4b8-d990-4644-9cbc-99b92dee4e12")
     @DisplayName("MenuTestimonials")
     @Test
     public void testMenuTestimonials(){
@@ -31,10 +31,10 @@ public class AnimatedMenuTest {
         Assertions.assertTrue(style.contains("is-active"), "Le bouton n'a pas été activé");
         driver.findElement(By.xpath("//a[contains(text(),'About')]")).click();
         style = driver.findElement(By.xpath("//a[contains(text(),'Testimonials')]")).getAttribute("class");
-        Assertions.assertTrue(style.contains("is-active"), "Le bouton n'a pas été désactivé");
+        Assertions.assertFalse(style.contains("is-active"), "Le bouton n'a pas été désactivé");
     }
 
-    @TFMetadata(key = "linked-TC", value = {"d7a611fe-58d4-4c30-b5e5-81eed0b81fc7", "b6bd1cc1-d161-407a-b7c8-59579e3d2514"})
+    @TFMetadata(key = "linked-TC", value = "141714ad-e3cc-463b-bddb-df7231958630")
     @DisplayName("MenuBlog")
     @Test
     public void testMenuBlog(){
