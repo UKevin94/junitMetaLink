@@ -16,7 +16,7 @@ public class AnimatedMenuTest {
 
     @BeforeEach
     public void setUp(){
-        driver = new ChromeDriver();
+        driver = new FirefoxDriver();
         driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
         driver.get("https://codepen.io/knyttneve/pen/LKrGBy");
     }
@@ -52,6 +52,6 @@ public class AnimatedMenuTest {
     @AfterEach
     public void tearDown(){
 
-        //driver.quit();
+        driver.quit();
     }
 }
