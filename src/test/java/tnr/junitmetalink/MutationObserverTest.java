@@ -20,7 +20,7 @@ public class MutationObserverTest {
 
     @BeforeEach
     public void setUp(){
-        driver = new FirefoxDriver();
+        driver = new ChromeDriver();
         driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
         driver.get("https://codepen.io/dayvidwhy/pen/egdZyY");
     }
