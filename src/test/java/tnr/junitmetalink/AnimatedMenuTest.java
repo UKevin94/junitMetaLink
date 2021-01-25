@@ -21,7 +21,7 @@ public class AnimatedMenuTest {
         driver.get("https://codepen.io/knyttneve/pen/LKrGBy");
     }
 
-    @TFMetadata(key = "linked-TC", value = "afcee4b8-d990-4644-9cbc-99b92dee4e12")
+    @TFMetadata(key = "linked-TC", value = "f736c1de-d242-4ffb-9d7a-8e4139b2fef1")
     @DisplayName("MenuTestimonials")
     @Test
     public void testMenuTestimonials(){
